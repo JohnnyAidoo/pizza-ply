@@ -1,4 +1,4 @@
-import CardComp from '../components/card';
+import ProductCard from '../components/card';
 import logo from '../images/pizzas/logo.png'
 
 
@@ -10,15 +10,15 @@ function HomePage() {
             <h1>PIZZA-PLY</h1>
         </div>
         <nav>
-            <a href="">For You</a>
-            <a href="">Hot Order</a>
+            <a href="" id='focus'>For You</a>
+            <a href="" >Hot Order</a>
         </nav>
         <div className="grid">
-            <CardComp/>
-            <CardComp/>
-            <CardComp/>
-            <CardComp/>
-            <CardComp/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
+            <ProductCard/>
         
         </div>
         </section>

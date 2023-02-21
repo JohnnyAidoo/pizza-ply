@@ -22,17 +22,17 @@
   margin: 0;
   border-radius: 20px;
   padding: 0 3%;
-  width: auto;
-  height: 25vh;
+  height: 35vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .ADBanner img{
-  width: 50%;
+  height: 100%;
 }
 .ADBanner h1{
   color: var(--primary);
+  font-size: x-large;
 }
 
 #HomePage nav{
@@ -46,7 +46,36 @@
   text-decoration: none;
   font-size: large;
   font-weight: bolder;
+  color: black;
+}
+#HomePage #focus{
+  font-size: x-large;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .grid{
+ display: grid;
+ grid-template-columns: repeat(3,1fr); 
+  gap: 5%;
+}
+#PoductCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: fit-content;
+}
+#PoductCard img{
+  width: 100%;
+}
+
+
+@media screen and (max-width : 768px) {
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .ADBanner{
+    height: 25vh;
+  }
   
 }

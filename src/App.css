@@ -4,7 +4,9 @@
   --ctr1: #F76B1B;
   --ctr2: #FF2727;
 }
-
+#root{
+  padding: 3% ;
+}
 
 .LoadScreen{
   display: flex;
@@ -12,4 +14,39 @@
   justify-content: center;
   height: 100vh;
   background: linear-gradient(var(--ctr1),var(--ctr2));
+}
+
+
+.ADBanner{
+  background: linear-gradient(to right,var(--ctr1),var(--ctr2));
+  margin: 0;
+  border-radius: 20px;
+  padding: 0 3%;
+  width: auto;
+  height: 25vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ADBanner img{
+  width: 50%;
+}
+.ADBanner h1{
+  color: var(--primary);
+}
+
+#HomePage nav{
+  padding: 2% 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#HomePage nav a{
+  text-decoration: none;
+  font-size: large;
+  font-weight: bolder;
+}
+.grid{
+  
 }

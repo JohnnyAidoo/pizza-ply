@@ -4,11 +4,14 @@ import image from '../images/pizzas/bbq-meat-feast4515.png'
 
 function PoductCard() {
     
+    const productClicked = () =>{
+     localStorage.setItem('image', image)
+     localStorage.setItem('name', 'pizza' )
+     localStorage.setItem('price', 100)
+    }
+
     return (
-        <Card id="PoductCard">
-            <CardHeader>
-                
-            </CardHeader>
+        <Card id="PoductCard" onClick={productClicked}>
             <CardMedia>
                 <img src={image}/>
             </CardMedia>

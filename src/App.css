@@ -5,7 +5,6 @@
   --ctr2: #FF2727;
 }
 #root{
-  padding: 3% ;
 }
 
 .LoadScreen{
@@ -24,7 +23,7 @@
   padding: 0 3%;
   height: 35vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .ADBanner img{
@@ -34,7 +33,9 @@
   color: var(--primary);
   font-size: x-large;
 }
-
+#HomePage{
+ padding: 3%;
+}
 #HomePage nav{
   padding: 2% 0;
   width: 100%;
@@ -69,6 +70,25 @@
   width: 100%;
 }
 
+.BottomNav{
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 1% 0;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--primary);
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+  ;  
+}
+.BottomNav a{
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+}
+
+
+
 
 @media screen and (max-width : 768px) {
   .grid{
@@ -76,6 +96,6 @@
   }
   .ADBanner{
     height: 25vh;
-  }
+   }
   
 }
